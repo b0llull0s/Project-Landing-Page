@@ -3,21 +3,17 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 /* Header Styles */
 .header {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
+    padding: 20px 200px; /* Horizontal padding */
 }
 
 .nav-links a {
@@ -30,12 +26,14 @@ body {
 /* Hero Section Styles */
 .hero-section {
     display: flex;
-    padding: 60px 40px;
+    align-items: center;
+    justify-content: space-between;
     background-color: #1F2937;
     color: #F9FAF8;
-    justify-content: space-between;
+    padding: 40px 200px; /* Horizontal padding matches the header */
 }
 
+/* Adjust text alignment and spacing */
 .hero-text {
     max-width: 50%;
 }
@@ -71,6 +69,7 @@ body {
     align-items: center;
     color: white;
 }
+
 
 /* Info Section Styles */
 .info-section {
@@ -119,56 +118,43 @@ body {
 
 .quote-section blockquote {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     color: #1F2937;
-    position: relative;
 }
 
 .quote-section footer {
     margin-top: 20px;
     font-size: 1.1em;
     color: #1F2937;
-    position: absolute;
-    right: 0;
-    bottom: -20px;
+    text-align: right;
 }
 
-/* CTA Section Styles */
-.cta-section {
-    padding: 60px 40px;
-    background-color: #3882F6;
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+/* CTA section specific things */
+.cta {
+    padding: 6rem;
+}
+
+.cta * {
+    color: var(--hero-main-text)
+} 
+
+.cta button {
+    border: 2px solid var(--hero-main-text);
+}
+
+.cta-container {
+    /* box-sizing: border-box; */
+    display:flex ;
+    justify-content: space-between;
+    gap: 4rem;
     align-items: center;
-}
-
-.cta-content {
-    max-width: 600px;
-}
-
-.cta-content h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.cta-content p {
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.cta-button {
-    background-color: #1F2937;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1em;
-    cursor: pointer;
+    max-width: 60rem;
+    padding: 3rem 3rem;
+    border-radius: 0.7rem;
+    background-color: #3882F6;
 }
 
 /* Footer Styles */
